@@ -1,10 +1,9 @@
-from dataclasses import dataclass
 import os
+from dataclasses import dataclass
 
-from databricks_cli.sdk.api_client import ApiClient
 from databricks_cli.dbfs.api import DbfsApi
 from databricks_cli.dbfs.dbfs_path import DbfsPath
-
+from databricks_cli.sdk.api_client import ApiClient
 
 SOURCE_PATH = "dbfs:/FileStore/ica/apple_instagram.csv"
 DEST_PATH = "data/apple_instagram.csv"
